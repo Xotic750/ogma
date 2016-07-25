@@ -1,18 +1,15 @@
 {
   "name": "OGMA",
   "description": "oGame Planet and Moon cycler",
-  "version": "0.3",
+  "version": "0.4",
   "manifest_version": 2,
-  "icons": { "16": "ogma-16.png", "128": "ogma-128.png" },
-  "permissions": [
-    "storage"
-  ],
-   "content_scripts": [ {
-      "all_frames": true,
-      "exclude_globs": [ ],
-      "include_globs": [ "https://s122-en.ogame.gameforge.com/*" ],
-      "css": [ "content.css" ],
-      "js": [ "content.js" ],
-      "matches": [ "http://*/*", "https://*/*" ]
-   } ]
+  "icons": {
+    "16": "ogma-16.png",
+    "128": "ogma-128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://s122-en.ogame.gameforge.com/*"],
+    "css": ["content.css"],
+    "js": ["content.js"]
+  }]
 }
