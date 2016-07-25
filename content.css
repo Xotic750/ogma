@@ -1,0 +1,18 @@
+#ogmaspan {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ogmalink {
+	display: inline-block;
+}
+.ogma:hover {
+	color: #9c0;
+	cursor: pointer;
+}
+.ogmarun {
+	color: red;
+}
+#ogmacycle {
+	background-color: white;
+}
