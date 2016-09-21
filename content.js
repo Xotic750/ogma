@@ -157,7 +157,7 @@
       if (node) {
         setTimeout(() => {
           sessionStorage.setItem('OGMAClicked', id);
-          node.dispatchEvent(new CustomEvent('click'));
+          node.dispatchEvent(new MouseEvent('click'));
         }, getRandomInt(fast, slow) * 1000);
       }
     }
@@ -271,4 +271,3 @@
 
   timedInit();
 }());
-
